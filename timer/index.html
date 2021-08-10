@@ -1,0 +1,63 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Timer</title>
+<meta name="description" content="5 minute timer">
+<meta name="author" content="SitePoint">
+
+<meta property="og:title" content="A Basic HTML5 Template">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+<meta property="og:description" content="A simple HTML5 Template for new projects.">
+<meta property="og:image" content="image.png">
+
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="setters">
+        <div class="minutes-set">
+          <button data-setter="minutes-plus">+</button>
+          <button data-setter="minutes-minus">-</button>
+        </div>
+        <div class="seconds-set">
+          <button data-setter="seconds-plus">+</button>
+          <button data-setter="seconds-minus">-</button>
+        </div>
+      </div>
+
+      <div class="circle">
+        <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+           <g transform="translate(110,110)">
+              <circle r="100" class="e-c-base"/>
+              <g transform="rotate(-90)">
+                 <circle r="100" class="e-c-progress"/>
+                 <g id="e-pointer">
+                    <circle cx="100" cy="0" r="8" class="e-c-pointer"/>
+                 </g>
+              </g>
+           </g>
+        </svg>
+    </div>
+    <div class="controlls">
+        <div class="display-remain-time">00:30</div>
+        <button class="play" id="pause"></button>
+      </div>
+
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
